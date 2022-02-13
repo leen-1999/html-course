@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Book Store</title>
+    <meta name="description" content="This Is Our Book Store" />
+</head>
+
+<body>
+    <div>
+        <h1>Book store</h1>
+        <p>This Is My Book Store, Welcome</p>
+    </div>
+    <!-- action="" told the place where the data in the form will be saved and this deal with backend
+          if we leave it empty  or we don't write it, the data will be be saved at the same page 
+            we need name attribute to let server know with which data it deals and you can write anything you want in the name -->
+    <form action="" method="GET"  novalidate target="_blank">
+        <input type="hidden" value="Osama">
+        <div>
+            <label>Username</label>
+            <input type="text" required name="user" value="Osama" readonly > 
+            <!-- readonly => read the data and send it and the user can't change them
+                        disabled => desn't give a permission to change and doesn't sen the data  -->
+          </div>
+        <br>
+        <div>
+            <label>Subject</label>
+            <input type="text" name="sub" autofocus>
+        </div>
+        <br>
+        <div>
+            <label>Password</label>
+            <input type="password"
+              required
+              placeholder="Write A Complex Password" 
+              name="pas"
+              minlength="6"
+              maxlength="8">
+        </div>
+        <br>
+        <div>
+            <label>email</label>
+            <input type="email" required placeholder="Write A Valid Email" value="o@nn.sa" name="mail" disabled>
+        </div>
+        <br>
+        <div>
+            <label>Color</label>
+            <input type="color" name="color">
+        </div>
+        <br>
+        <div>
+            <label>Range</label>
+            <input type="range" name="range" min="0" max="100" step="20" value="0">
+        </div>
+        <br>
+        <div> 
+            <label for="num">Number</label>
+            <input id="num" type="number" name="number" min="10" max="100" step="10" value="20">
+        </div>
+        <hr>
+        <div>
+            <input id="win" type="radio" name="os" value="windows" checked>
+            <label for="win" >Windows</label>
+        </div>
+        <br>
+        <div>
+            <input id="lin" type="radio" name="os" value="Linux">
+            <label for="lin">Linux</label>
+        </div>
+        <br>
+        <div>
+            <input id="mac" type="radio" name="os" value="Mac" >
+            <label for="mac" >Mac</label>
+        </div>
+        <br>
+        <hr>
+        <div>
+            <input id="win1" type="checkbox" name="os" value="windows" checked>
+            <label for="win1" >Windows</label>
+        </div>
+        <br>
+        <div>
+            <input id="lin1" type="checkbox" name="os" value="Linux">
+            <label for="lin1">Linux</label>
+        </div>
+        <br>
+        <div>
+            <input id="mac1" type="checkbox" name="os" value="Mac" >
+            <label for="mac1" >Mac</label>
+        </div>
+        <br>
+
+        </div>
+
+        <label for="book">Choose Book</label> 
+        <select name="book" id="book" multiple>
+            <optgroup label="novels">
+                <option value="1">book 1</option>
+                <option value="2">book 2</option>
+                <option value="3">book 3</option>
+            </optgroup>
+                <optgroup label="historical books">
+                    <option value="4" selected>book 4</option>
+                    <option value="5">book 5</option>
+                    <option value="6">book 6</option>
+                </optgroup>
+        </select>
+        <hr>
+        <textarea name="Subject" id="" cols="30" rows="10"></textarea>
+        <hr>
+
+        <div>
+            <label >Upload</label>
+            <input type="file">
+        </div>
+        <hr>
+
+        <div>
+            <label >Search</label>
+            <input type="search">
+        </div>
+        <hr>
+        <div>
+            <label >Url</label>
+            <input type="url">
+        </div>
+        <hr>
+        <div>
+            <label >Date</label>
+            <input type="date">
+        </div>
+        <hr>
+        <div>
+            <label >Month</label>
+            <input type="month" >
+        </div>
+        <hr>
+        <div>
+            <label >Time</label>
+            <input type="time">
+        </div>
+        <hr>
+        <!-- the difference between input list, datalist and select is in list you
+            can search for the thing you want -->
+        <input list="programming" name="prog">
+        <datalist id="programming">
+            <option value="Python">
+            <option value="PHP">
+            <option value="C#">
+            <option value="c++">
+            <option value="Scala">
+            <option value="Javascript">
+            </datalist>
+
+        <input type="reset" value="reset">
+        <input type="submit" value="Save">
+    </form>
+</body>
+
+</html>
