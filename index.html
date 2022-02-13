@@ -1,0 +1,254 @@
+
+<!DOCTYPE html> <!--to render the page in standard mode not quirks mode and it must be found 
+    n every page you design and it defines that you deal with html5-->
+<html>
+<head>
+<!-- This meta is for supporting arabic and global websites use it -->
+<meta charset="UTF-8" />
+<!-- meta is self closing tag <meta/> -->
+<title>Book Store</title>
+<meta name="description" contents="This Is Our Book Store" />
+<!-- 
+syntax rules supoert that 
+
+<meta 
+name=       "description" 
+or
+name=       description   without neither single codes nor double codes only and only if you have one word
+name=      'description'
+contents=   "This Is Our Book Store" />
+-->
+<!-- It is for css codes -->
+<style></style> 
+<!--It is for Javascript codes-->
+<script></script>
+<link rel="stylesheet" href="">
+</head>
+<body> 
+
+<!--h1--h6-->
+<h1>Book Store</h1>
+<!--paragraph tag is block element -->
+<!-- 
+b => Bold
+strong => Bold => Important Text   
+i =>Italic
+em => Emphasized  
+mark =>Marked Text Or Highlighted Text
+u => Underline  
+small => Smaller text
+del=> Deleeted Text
+ins => Inserted Text
+<br> enter =>start a new line
+sub=> Subscript
+sup=> Superscript
+a=>Anchor It used for link It is not a block element, is an inline element
+<p>lorem+tab </p> =>to see the default paragraph text
+img=> src=>source alt=> alternate text
+-->
+<p>This My <b>book Store</b>, Welcome</p><p>We Have A Big Sale</p>
+<p>This My <strong>book Store</strong>, Welcome</p><p>We Have A Big Sale</p>
+<p>This My <i>book Store</i>, Welcome</p><p>We Have A Big Sale</p>
+<p>This My <em>book Store</em>, Welcome</p><p>We Have A Big Sale</p>
+<p>This My book Store, <mark>Welcome</mark></p><p>We Have A Big Sale</p>
+<p>This My book Store, <u>Welcome</u></p><p>We Have A Big Sale</p>
+<p>This My book Store, <small>Welcome</small></p><p>We Have A Big Sale</p>
+<p>This My book Store, <del>Welcome</del></p>
+<p><del>$100</del>  80</p>
+<p>This My book Store, <ins>Welcome</ins></p>
+<p>h<sub>2</sub>o</p>
+<p>2<sup>2</sup></p>
+Line1
+<hr>
+Line2
+Line3
+<a href="test.html" target="blank" title="Go To Test Page">Test</a>
+<a href="https://www.youtube.com/watch?v=7TQhxAOjd1w&list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji&index=12"
+ title="Go to Elzero lesson12" target="blank">Elzero</a>
+ <a href="#elzeroGlobalArrtibute" title="Go to certain paragraph">Elzero paragraph</a>
+ <a href="mailto:leenghannam2@gmail.com">Contact Me</a>
+ <img src="https://miro.medium.com/max/1067/1*WXeX5L11JGvCTmmS7f-4qg.png" alt="">
+ <!-- it is prefer to do not  use width and height in html, it is better to use them in css -->
+ <img src="1_WXeX5L11JGvCTmmS7f-4qg.png" alt="" width="300px" hight="300px">
+ <!-- if we have an image ıytside the project folder .. go back -->
+ <img src="../1_WXeX5L11JGvCTmmS7f-4qg.png" alt="">
+ <!-- if we have an image into folder, so we use the following way to share / go into folder -->
+ <img src="images/1_WXeX5L11JGvCTmmS7f-4qg.png" alt="since the image found it will not show">
+ <img src="missing-image.png" alt="Since the image is not found it will show ">
+ 
+ <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nobis provident sit in facere repellat ea voluptatibus! Tempora, modi reprehenderit? Nemo ipsum quis ducimus voluptates suscipit nulla exercitationem. Maxime, soluta.</p>
+ <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nobis provident sit in facere repellat ea voluptatibus! Tempora, modi reprehenderit? Nemo ipsum quis ducimus voluptates suscipit nulla exercitationem. Maxime, soluta.</p>
+ <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nobis provident sit in facere repellat ea voluptatibus! Tempora, modi reprehenderit? Nemo ipsum quis ducimus voluptates suscipit nulla exercitationem. Maxime, soluta.</p>
+ <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nobis provident sit in facere repellat ea voluptatibus! Tempora, modi reprehenderit? Nemo ipsum quis ducimus voluptates suscipit nulla exercitationem. Maxime, soluta.</p>
+ <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nobis provident sit in facere repellat ea voluptatibus! Tempora, modi reprehenderit? Nemo ipsum quis ducimus voluptates suscipit nulla exercitationem. Maxime, soluta.</p>
+ <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nobis provident sit in facere repellat ea voluptatibus! Tempora, modi reprehenderit? Nemo ipsum quis ducimus voluptates suscipit nulla exercitationem. Maxime, soluta.</p>
+ <p id="elzeroGlobalArrtibute">Elzero Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nobis provident sit in facere repellat ea voluptatibus! Tempora, modi reprehenderit? Nemo ipsum quis ducimus voluptates suscipit nulla exercitationem. Maxime, soluta.</p>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nobis provident sit in facere repellat ea voluptatibus! Tempora, modi reprehenderit? Nemo ipsum quis ducimus voluptates suscipit nulla exercitationem. Maxime, soluta.</p>
+ 
+ <!--
+    ul => Unordered List
+    li => List Item
+    ol=> Ordered Lİst
+   -->
+   <ul>
+     <li>HTML</li>
+     <li>CSS</li>
+     <li>
+         JS
+<ul>
+    <li>Frameworks
+        <ul>
+            <li>Angular</li>
+            <li>Reacjs</li>
+            <li>Vuejs</li>
+         </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<!-- Separator -->
+<!-- reserved => Reverse The Ordering 
+     start => start From Position
+     type => Type Of Ordering-->
+    <ol>
+        <li>Name
+            <ol>
+                <li>First Name</li>
+                <li>Last Name</li>
+            </ol>
+        </li>
+        <li>Address</li>
+        <li>Id</li>
+    </ol>
+    <hr>
+    <ol reversed>
+        <li>Name
+            <ol>
+                <li>First Name</li>
+                <li>Last Name</li>
+            </ol>
+        </li>
+        <li>Address</li>
+        <li>Id</li>
+    </ol>
+    <hr>
+    <ol start="100" >
+        <li>Name
+            <ol >
+                <li>First Name</li>
+                <li>Last Name</li>
+            </ol>
+        </li>
+        <li>Address</li>
+        <li>Id</li>
+    </ol>
+    <hr>
+    <ol type="1">
+        <li>Name
+            <ol>
+                <li>First Name</li>
+                <li>Last Name</li>
+            </ol>
+        </li>
+        <li>Address</li>
+        <li>Id</li>
+    </ol>
+    <hr>
+    <ol  reversed type="A">
+        <li>Name
+            <ol>
+                <li>First Name</li>
+                <li>Last Name</li>
+            </ol>
+        </li>
+        <li>Address</li>
+        <li>Id</li>
+    </ol>
+    <hr>
+    <ol type="A">
+        <li>Name
+            <ol>
+                <li>First Name</li>
+                <li>Last Name</li>
+            </ol>
+        </li>
+        <li>Address</li>
+        <li>Id</li>
+    </ol>
+    <hr>
+    <ol type="a">
+        <li>Name
+            <ol>
+                <li>First Name</li>
+                <li>Last Name</li>
+            </ol>
+        </li>
+        <li>Address</li>
+        <li>Id</li>
+    </ol>
+    <hr>
+    <ol type="I">
+        <li>Name
+            <ol>
+                <li>First Name</li>
+                <li>Last Name</li>
+            </ol>
+        </li>
+        <li>Address</li>
+        <li>Id</li>
+    </ol>
+    <hr>
+    <ol type="i">
+        <li>Name
+            <ol>
+                <li>First Name</li>
+                <li>Last Name</li>
+            </ol>
+        </li>
+        <li>Address</li>
+        <li>Id</li>
+    </ol>
+    <hr>
+    <ol>
+        <li value="50">Name</li>
+        <li>Surname</li>
+    </ol>
+    <!-- Separator -->
+    <!-- 
+        dl=> Description List
+        dt => Term
+        dd => Description Term
+     -->
+     <hr>
+     <dl>
+         <dt>HTML</dt>
+         <dd>Language Of Web</dd>
+         <dd>The First Language</dd>
+         <dt>CSS</dt>
+         <dd>Language Of Visuals</dd>
+     </dl>
+<!-- <h2>Chapter Title Inside Book</h2> -->
+<!-- <h3>Story Title Inside Chapter</h3> -->
+
+<!-- <h4>Book Store</h4> -->
+<!-- <h5>Book Store</h5> -->
+<!-- <h6>Book Store</h6> -->
+
+
+<!--
+comment Line one 
+comment Line two
+comment Line three 
+comment Line four 
+-->
+<!--
+ alt+shift+up arrow --< to duplicate the related lines to up
+ alt+shift+down arrow --< to duplicate the related lines to down
+ tab --< go on 
+ tab + shift --< to go back
+ alt +shif --< to change keyboard language    
+ alt+ up/down arrow --< to replace the related lines to up or down
+ ctrl+ظ to creat comment line and to cancel the comment lines
+--> 
+</body>
+</html>
