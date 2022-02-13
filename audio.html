@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Book Store</title>
+        <meta name=description content="This Is Our Store Book"/>
+    </head>
+    <body>
+       <div>
+           <h1>Book Store</h1>
+           <p>This Is My book Store, welcome</p>
+       </div> 
+       <audio  controls autoplay loop muted>
+           <source> 
+           <!-- this  <source>  supports an advantage to add more than
+                one of types of music format for supplying browser supporting one of them -->
+           <source src="media/Klasik Müzik - Beethoven-Fur Elise.mp3 " type="audio/mpeg">
+           <!-- type 's MIME type tou can find it on the internet -->
+           <source src="media/Klasik Müzik - Beethoven-Fur Elise.ogg" type="audio/ogg" > 
+           <source src="media/Klasik Müzik - Beethoven-Fur Elise.wav" type="audio/wav" >
+
+           <!-- <audio src=""></audio> 
+                you can use instead of src inside audio tag source tag <source src="media/Klasik Müzik - Beethoven-Fur Elise.wav" type="audio/wav" >
+            --> 
+            <!-- 
+                you can use juat mp3 type since the modern browsers support it
+                you must add cntrols  attribute inside audio tag in order  to make the user able to stop, play, mute, and adjust the audio
+                autoplay attribute makes the audio play once you open the page on the browser
+                loop  attribute makes the audio repeat itself forever(infinte loop)
+                muted attribute to make the audio without any sound but it can be change by user (user can play the audio)
+            -->
+                <!--The following message will appear if the browser the user uses does not support the audio tag -->
+                Your Browser Does Not Support Audio Tags
+       </audio>
+    </body>
+</html>
