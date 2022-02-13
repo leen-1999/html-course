@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Book Store</title>
+        <meta name="description" content="This Is Our Book Store" />
+    </head>
+    <body>
+        <!-- ARIA => Accessible Rich Internet Application -->
+        <!-- JAWS a screen reader application you can install it to read the screen -->
+        <h1>Book Title</h1>
+
+        <h3>Chapter One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Quisquam, id amet doloribus possimus recusandae commodi dolorum cum magnam. 
+             Odit necessitatibus aliquid ipsum corporis sed ex recusandae eum eaque optio quod.</p>
+
+             <div>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                 Quia esse inventore vel ea delectus debitis eveniet fugit dolores temporibus doloremque dicta veniam,
+                  ex beatae ullam quam ad, illum quaerat cum.
+             </div>
+             <h2>Inside Chapter One</h2>
+             <form action="">
+                <label for="skill1">Skil One</label>
+                 <input  id="skill1"type="checkbox" checked>
+                 <label for="skill2">Skil Two</label>
+                 <input  id="skill2"type="checkbox" checked>
+             </form>
+             <hr />
+             <!-- to make as checkbox above but in different way
+                and this makes accessibilty level heigher and give 
+                the ability to scren readers to understand what there are 
+                aria-checked="true" for being checked or it can be aria-checked="false" to being unchecked
+                tabindex="0" to give the ability to tab between options-->
+             <div role="checkbox" aria-checked="true" tabindex="0" >Plan One</div>
+             <label id="paln1">plan one lebel</label>
+             <div tabindex="0">Plan Two</div>
+             <div tabindex="0">Plan Three</div>
+    </body>
+</html>
